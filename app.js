@@ -34,7 +34,7 @@ let topPipeImg;
 let bottomPipeImg;
 
 //Sound variables
-let mysound = new Audio("sound1.wav");
+let mysound = new Audio("./audio/sound.wav");
 
 //Bird object
 let bird = {
@@ -53,16 +53,16 @@ window.onload = function () {
 
   //load image
   birdImg = new Image();
-  birdImg.src = "./flappybird.png";
+  birdImg.src = "./images/flappybird.png";
   birdImg.onload = function () {
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
   };
 
   topPipeImg = new Image();
-  topPipeImg.src = "./toppipe.png";
+  topPipeImg.src = "./images/toppipe.png";
 
   bottomPipeImg = new Image();
-  bottomPipeImg.src = "./bottompipe.png";
+  bottomPipeImg.src = "./images/bottompipe.png";
 
   requestAnimationFrame(update);
   setInterval(placePipes, 1500);

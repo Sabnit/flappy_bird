@@ -7,7 +7,7 @@ body {
 }
 
 #board {
-  background-image: url("./flappybirdbg.png");
+  background-image: url("./images/flappybirdbg.png");
   z-index: 0;
 }
 
